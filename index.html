@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>Window 10 Shortcuts</title>
+<script type="text/javascript" src="cordova.js"></script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+</head>
+<body onload="onLoad()" onresize="onResize()">
+<script>
+ 
+
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) { 
+    admobid = { // for Android
+        banner: 'ca-app-pub-2373638997110870/1831405944',
+        interstitial: 'ca-app-pub-2373638997110870/4784872348'
+    };
+} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+    admobid = { // for iOS
+        banner: 'ca-app-pub-6869992474017983/4806197152',
+        interstitial: 'ca-app-pub-6869992474017983/7563979554'
+    };
+} else {
+    admobid = { // for Windows Phone
+        banner: 'ca-app-pub-2373638997110870/6401206345',
+        interstitial: 'ca-app-pub-2373638997110870/7877939545'
+    };
+}
+
+if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
+    document.addEventListener('deviceready', initApp, false);
+} else {
+    initApp();
+}
+
+function initApp() {
+    if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
+
+    AdMob.createBanner( {
+        adId: admobid.banner, 
+        isTesting: true,
+        overlap: false, 
+        offsetTopBar: false, 
+        position: AdMob.AD_POSITION.BOTTOM_CENTER,
+        bgColor: 'black'
+    } );
+    
+    AdMob.prepareInterstitial({
+        adId: admobid.interstitial,
+        autoShow: true
+    });
+}
+   
+</script>
+	<div id="fullpage">
+	<b><h2>	Windows 10 Shortcuts</h2><b>
+		<br><br>
+		<div class="shortcuts_body"><a name="link_1"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main" style="display: inline;"></span>1. Manage Start Button and Task Bar<br><br></th></tr><tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span></td>
+<td style="display: table-cell;">Activate Start Button. Then use <span class="kbd">Arrow Keys</span>, <span class="kbd">Space</span> and <span class="kbd">Enter</span> to navigate within Start Menu</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Escape</span></td>
+<td style="display: table-cell;">Close Start Menu</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">T</span></td>
+<td style="display: table-cell;">Go to first item in <span class="kbd">T</span>askbar, continue with <span class="kbd">Arrow Keys</span>, and press <span class="kbd">Enter</span></td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">B</span></td>
+<td style="display: table-cell;">Go to first item in System Tray</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Shift</span>+click on a Taskbar item</td>
+<td style="display: table-cell;">Start new instance of Taskbar item</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+click on a Taskbar item</td>
+<td style="display: table-cell;">Start new instance of Taskbar item as administrator</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Shift</span>+right-click on a Taskbar item</td>
+<td style="display: table-cell;">Show the window menu for the program</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">1</span>...<span class="kbd">9</span></td>
+<td style="display: table-cell;">Switch to application in position N on Taskbar (or launch pinned application)</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Shift</span>+<span class="kbd">Win</span>+<span class="kbd">1</span>...<span class="kbd">9</span></td>
+<td style="display: table-cell;">Start new instance of taskbar item in position N on Taskbar</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">D</span></td>
+<td style="display: table-cell;">Minimize all windows on all Monitors. Press again to restore previous state</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">M</span></td>
+<td style="display: table-cell;"><span class="kbd">M</span>inimize all windows on current Monitor.</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">Shift</span>+<span class="kbd">M</span></td>
+<td style="display: table-cell;">Restore previously minimized windows on current Monitor</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">Home</span></td>
+<td style="display: table-cell;">Set all windows to Minimized on current Monitor except active</td>
+</tr>
+<tr>
+<td class="shortcut" style="display: table-cell;"><span class="kbd">Win</span>+<span class="kbd">,</span></td>
+<td style="display: table-cell;">Temporarily show the Desktop</td>
+</tr>
+</tbody></table>
+<a name="link_2" style="display: inline;"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>2. Access Commonly Used Windows Features</th></tr><tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">E</span></td>
+<td>Start Windows <span class="kbd">E</span>xplorer</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">R</span></td>
+<td>Open the <span class="kbd">R</span>un window</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">L</span></td>
+<td><span class="kbd">L</span>ock Windows</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">P</span></td>
+<td>Choose <span class="kbd">P</span>rojection Mode (Switch between Screen and Projector, extend and duplicate displays)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">H</span></td>
+<td>S<span class="kbd">h</span>are Screenshot</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">K</span></td>
+<td>Connect to Wireless Devices</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">Q</span></td>
+<td>Start Cortana and ready for Voice Input</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">S</span></td>
+<td>Start Cortana and ready for Text Input</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">I</span></td>
+<td>Start Windows 10 Sett<span class="kbd">i</span>ngs Interface</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">A</span></td>
+<td>Start Windows 10 <span class="kbd">A</span>ction Center</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span></td>
+<td>Start Windows 10 Context Menu (same as right-clicking start button)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+<span class="kbd">Esc</span></td>
+<td>Opens Windows Task Manager</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">Pause/Break</span></td>
+<td>Display System Properties which holds system properties, computer name, device manager and so on</td>
+</tr>
+</tbody></table>
+<a name="link_3"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>3. Manage Screen Recordings</th></tr><tr><td class="supplemental" colspan="2">Requires to start Xbox App on Windows 10 and Screen Recording Utility, per first two keystrokes below.</td></tr>
+<tr>
+<td class="shortcut">Press <span class="kbd">win</span> key, then type 'xbox', then press enter</td>
+<td>Start Xbox for Screen Recording Utility</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">G</span></td>
+<td>Start Screen Recording Utility via the Xbox <span class="kbd">G</span>ame Bar. Confirm with 'Yes this is a game'</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">Alt</span>+<span class="kbd">R</span></td>
+<td>Start and Stop Screen Recording. Recording is saved under This PC\Videos\Captures</td>
+</tr>
+</tbody></table>
+<a name="link_4"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>4. Take and Share Screenshots</th></tr><tr>
+<td class="shortcut"><span class="kbd">PrtScr</span></td>
+<td>Take Screenshot</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">H</span></td>
+<td>S<span class="kbd">h</span>are Screenshots</td>
+</tr>
+</tbody></table>
+<a name="link_5"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>5. Manage Keyboard Layout / Input Languages</th></tr><tr>
+<td class="shortcut"><span class="kbd">Alt</span>+<span class="kbd">Shift</span></td>
+<td>Change keyboard language layout in order they are setup</td>
+</tr>
+<tr>
+<td class="shortcut">Press and hold <span class="kbd">Win</span>, then press <span class="kbd">Space</span></td>
+<td>Show all available keyboard language layouts and lets you select by continue pressing <span class="kbd">Space</span></td>
+</tr>
+</tbody></table>
+<a name="link_6"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>6. Navigate File List and Navigation Pane</th></tr><tr>
+<td class="shortcut"><span class="kbd">Arrow Keys</span></td>
+<td>Navigate between files and folders</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Enter</span></td>
+<td>Open folder or start application</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Home</span>/<span class="kbd">End</span></td>
+<td>Jump to first / jump to last item</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F2</span></td>
+<td>Change the file name of active item</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F2</span>, then <span class="kbd">Arrow Left</span>/ <span class="kbd">Arrow Right</span></td>
+<td>Move one character to the left / to the right in item name</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F2</span>, then <span class="kbd">Ctrl</span>+ <span class="kbd">Arrow Left</span>/<span class="kbd">Arrow Right</span></td>
+<td>Jump one word to the left / to the right of item name</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F2</span>, then <span class="kbd">Home</span> /<span class="kbd">End</span></td>
+<td>Jump to beginning / jump to end of item name</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F2</span>, then <span class="kbd">Ctrl</span>+<span class="kbd">A</span></td>
+<td>Select all/ complete object name including suffix (default excludes suffix)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Arrow Left</span>/<span class="kbd">Arrow Right</span></td>
+<td>Expand folder / collapse folder (navigation pane only)</td>
+</tr>
+</tbody></table>
+<a name="link_7"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>7. File List Views</th></tr><tr>
+<td class="shortcut"><span class="kbd">Alt</span>+<span class="kbd">P</span></td>
+<td>Display or hide <span class="kbd">P</span>review Pane</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Alt</span>+<span class="kbd">V</span> then <span class="kbd">D</span></td>
+<td>View <span class="kbd">d</span>etails. Check View menu for more options</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Alt</span>+<span class="kbd">V</span> then <span class="kbd">X</span></td>
+<td>View e<span class="kbd">x</span>tra-large icons. Check View menu for more options</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+mouse scroll wheel</td>
+<td>Change size of icons</td>
+</tr>
+</tbody></table>
+<a name="link_8"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"><img src="minus.jpg" alt="plus" class="expand main"></span>8. Select Items in File List and Navigation Pane</th></tr><tr>
+<td class="shortcut"><span class="kbd">Shift</span>+<span class="kbd">Arrow Up</span>/ <span class="kbd">Arrow Down</span></td>
+<td>Select multiple adjacent items (directly above or below)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span> with <span class="kbd">Arrow keys</span> and <span class="kbd">Space</span></td>
+<td>Select multiple non-adjacent items. Hold <span class="kbd">ctrl</span>, use <span class="kbd">arrow keys</span> to move to next item, and press <span class="kbd">space</span> to add/remove from selection</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">A</span></td>
+<td>Select <span class="kbd">a</span>ll</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">A</span> ...<span class="kbd">Z</span> and <span class="kbd">1</span>..<span class="kbd">9</span></td>
+<td>Press the initial letter any item to jump to it. Continue typing the full name if multiple items start with the same letter</td>
+</tr>
+</tbody></table>
+<a name="link_9"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>9. Manage Items in Explorer</th></tr><tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">C</span>, <span class="kbd">Ctrl</span>+<span class="kbd">X</span>, <span class="kbd">Ctrl</span>+<span class="kbd">V</span></td>
+<td>Copy, Cut, Paste</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Z</span></td>
+<td>Undo an action</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Y</span></td>
+<td>Redo an action</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Delete</span></td>
+<td>Delete an item and place it into the Recycle Bin</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Shift</span>+<span class="kbd">Delete</span></td>
+<td>Delete an item permanently without placing it into the Recycle Bin</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Shift</span>+<span class="kbd">F10</span></td>
+<td>Activate context menu of active object. Replaces the right mouse button. Once in the context menu use <span class="kbd">arrow keys</span>, <span class="kbd">a</span>-<span class="kbd">z</span> and <span class="kbd">enter</span> to get to the selection</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+<span class="kbd">N</span></td>
+<td>Create <span class="kbd">n</span>ew folder</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Alt</span>+<span class="kbd">Enter</span></td>
+<td>Open Properties dialog box</td>
+</tr>
+</tbody></table>
+<a name="link_10"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>10. Power User Commands</th></tr><tr><td class="supplemental" colspan="2">Sorted by their subjective usefulness.</td></tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">U</span></td>
+<td>Sh<span class="kbd">u</span>tdown Options. Prefer this over <span class="kbd">Alt</span>+<span class="kbd">F4</span>, as it is cumbersome cycling through closing Windows before hitting the Windows Shutdown</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">P</span></td>
+<td>Control <span class="kbd">P</span>anel (better: <span class="kbd">Win</span>+<span class="kbd">R</span>, then type 'control')</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">W</span></td>
+<td>Net<span class="kbd">w</span>ork Settings</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">T</span></td>
+<td><span class="kbd">T</span>ask Manager</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">F</span></td>
+<td>Programs and <span class="kbd">F</span>eatures</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">A</span></td>
+<td>Elevated Command Prompt (<span class="kbd">A</span>dmin cmd)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">Y</span></td>
+<td>S<span class="kbd">y</span>stem Information</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">M</span></td>
+<td>Device <span class="kbd">M</span>anager</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">G</span></td>
+<td>Computer Mana<span class="kbd">g</span>ement</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">O</span></td>
+<td>P<span class="kbd">o</span>wer Options</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">V</span></td>
+<td>E<span class="kbd">v</span>ent Viewer</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">K</span></td>
+<td>Dis<span class="kbd">k</span> Management</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">B</span></td>
+<td>Mo<span class="kbd">b</span>ility Center</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">R</span></td>
+<td>Windows <span class="kbd">R</span>un Command (better: <span class="kbd">Win</span>+<span class="kbd">r</span>)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">C</span></td>
+<td><span class="kbd">C</span>ommand Prompt (better: <span class="kbd">Win</span>+<span class="kbd">R</span>, then 'cmd')</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">X</span>, <span class="kbd">S</span></td>
+<td>Cortana <span class="kbd">S</span>earch (better: <span class="kbd">Win</span>+<span class="kbd">Q</span>)</td>
+</tr>
+</tbody></table>
+<a name="link_11"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>11. Windows Magnifier Shortcuts</th></tr><tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">+</span></td>
+<td>Start Magnifier</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">Esc</span></td>
+<td>Exit Magnifier</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">+</span> / <span class="kbd">-</span></td>
+<td>With Magnifier activated, zoom in / zoom out</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Alt</span>+<span class="kbd">I</span></td>
+<td>Invert colors in Magnifier display</td>
+</tr>
+</tbody></table>
+<a name="link_12"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>12. Windows Dialog Boxes</th></tr><tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Tab</span>/<span class="kbd">Ctrl</span>+<span class="kbd">Shift</span>+<span class="kbd">Tab</span></td>
+<td>Move forward / move backwards through tabs</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Tab</span>/<span class="kbd">Shift</span>+<span class="kbd">Tab</span></td>
+<td>Move forward / move backwards through options</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Alt</span>+underlined letter</td>
+<td>Perform the command (or select the option) that goes with that letter</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Enter</span></td>
+<td>Replaces clicking the mouse for many selected commands</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Space</span></td>
+<td>Select or clear the check box if the active option is a check box</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Arrow Keys</span></td>
+<td>Select a button if the active option is a group of option buttons</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F4</span></td>
+<td>Display the items in the active list</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Backspace</span></td>
+<td>Open a folder one level up if a folder is selected in the Save As or Open dialog box</td>
+</tr>
+</tbody></table>
+<a name="link_13"></a>
+<table class="category main" cellspacing="0">
+<tbody><tr><th colspan="2"><span class="plus_minus main"><img alt="minus" src="minus.jpg" class="collapse main"></span>13. The Rest</th></tr><tr>
+<td class="shortcut"><span class="kbd">Win</span>+<span class="kbd">F1</span></td>
+<td>Display Windows Help</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Shift</span> when inserting CD or DVD</td>
+<td>Prevent CD or DVD from automatically playing</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">F11</span></td>
+<td>Turn full page view on or off (unless overwritten by Application Shortcut, such as Excel 2013)</td>
+</tr>
+<tr>
+<td class="shortcut"><span class="kbd">Ctrl</span>+<span class="kbd">Win</span>+<span class="kbd">F</span></td>
+<td>Search for Computers (with Active Directory activated)</td>
+</tr>
+</tbody></table>
+</div>
+ 
+ <h3>
+ <b>
+Want to say something? <br>
+Rate and Review or Drop a suggestion Mail - pictodeveloper@gmail.com</b>
+ 
+</h3>
+	</div>
+</body>
+<body background="bg10.jpg">
+</html>
